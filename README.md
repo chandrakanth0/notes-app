@@ -4,35 +4,8 @@ A full-stack notes application built with **React** (frontend), **Python Flask**
 
 ---
 
-## 📁 Project Structure
 
-notes-app/
-│
-├── backend/
-│ ├── routes/
-│ │ ├── auth.py
-│ │ └── notes.py
-│ ├── .env
-│ ├── app.py
-│ ├── config.py
-│ ├── extension.py
-│ ├── models.py
-│ └── requirements.txt
-│
-└── frontend/
-└── src/
-├── pages/
-│ ├── login.jsx
-│ └── notes.jsx
-├── styles/
-│ ├── login.css
-│ └── notes.css
-├── services/
-│ └── api.js
-└── App.jsx
-
-
-# Step 2 : Setup The Backend 
+# Step 1 : Setup The Backend 
 cd backend
 python -m venv venv
 venv\Scripts\activate      # On Windows
@@ -56,7 +29,7 @@ SESSION_TYPE = 'filesystem'
 python app.py
 
 
-# Step 3 : Setup Frontend
+# Step 2 : Setup Frontend
 cd ../frontend
 npm install
 
@@ -68,7 +41,7 @@ npm run dev
 
 
 
-# Step 4 : Setup Mysql Database
+# Step 3 : Setup Mysql Database
 CREATE DATABASE notes_app;
 USE notes_app;
 
